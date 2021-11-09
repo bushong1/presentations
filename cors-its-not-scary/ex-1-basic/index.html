@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    var my_server = "http://api.example.com:8001"
+  </script>
+</head>
+<body>
+  <p>Here's your data:</p>
+  <pre> <div id="json_data"></div></pre>
+  <script>
+    fetch(`${my_server}/data.json`)
+      .then(response => response.json())
+      .then(data => {
+        document.querySelector("#json_data")
+          .innerText = JSON.stringify(data, null, 2)
+      })
+  </script>
+</body>
+</html>

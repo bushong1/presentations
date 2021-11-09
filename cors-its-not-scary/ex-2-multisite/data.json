@@ -1,0 +1,17 @@
+{
+  "foo": {
+    "bar": "b a r",
+    "baz": "b a z",
+    "listy_thing": [{
+      "key": "value1"
+    }, {
+      "key": "value2"
+    }, {
+      "key": "value3"
+    }, {
+      "key": "value4"
+    }, {
+      "key": "value5"
+    }]
+  }
+}
